@@ -1647,13 +1647,13 @@ def getRemainingSearches(browser: WebDriver):
         targetDesktop += item.get('pointProgressMax', 0)
     if targetDesktop == 33:
         # Level 1 EU
-        searchPoints = 6
+        searchPoints = 5
     elif targetDesktop == 55:
         # Level 1 US
         searchPoints = 9
     elif targetDesktop == 102:
         # Level 2 EU
-        searchPoints = 6
+        searchPoints = 5
     elif targetDesktop >= 170:
         # Level 2 US
         searchPoints = 9
