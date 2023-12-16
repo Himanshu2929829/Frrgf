@@ -1647,16 +1647,16 @@ def getRemainingSearches(browser: WebDriver):
         targetDesktop += item.get('pointProgressMax', 0)
     if targetDesktop == 33:
         # Level 1 EU
-        searchPoints = 3
+        searchPoints = 6
     elif targetDesktop == 55:
         # Level 1 US
-        searchPoints = 5
+        searchPoints = 9
     elif targetDesktop == 102:
         # Level 2 EU
-        searchPoints = 3
+        searchPoints = 6
     elif targetDesktop >= 170:
         # Level 2 US
-        searchPoints = 5
+        searchPoints = 9
     remainingDesktop = int((targetDesktop - progressDesktop) / searchPoints)
     remainingMobile = 0
     if dashboard['userStatus']['levelInfo']['activeLevel'] != "Level1":
